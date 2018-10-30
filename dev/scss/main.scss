@@ -1,0 +1,150 @@
+// NORMALIZE
+// @import "base/normalize";
+
+// LIBS
+// @import "base/assets/libs";
+
+
+// SASS BASE
+@import "base/sass/mixin";
+@import "base/sass/var";
+
+
+// TYPOGRAPHY
+@import "base/typography/fonts";
+@import "base/typography/typography";
+
+// bootstrap
+
+@import "assets/libs/bootstrap/functions";
+@import "assets/libs/bootstrap/variables";
+@import "assets/libs/bootstrap/mixins";
+@import "assets/libs/bootstrap/root";
+@import "assets/libs/bootstrap/reboot";
+@import "assets/libs/bootstrap/type";
+@import "assets/libs/bootstrap/images";
+@import "assets/libs/bootstrap/code";
+@import "assets/libs/bootstrap/grid";
+@import "assets/libs/bootstrap/tables";
+@import "assets/libs/bootstrap/forms";
+@import "assets/libs/bootstrap/buttons";
+@import "assets/libs/bootstrap/transitions";
+@import "assets/libs/bootstrap/dropdown";
+@import "assets/libs/bootstrap/button-group";
+@import "assets/libs/bootstrap/input-group";
+@import "assets/libs/bootstrap/custom-forms";
+@import "assets/libs/bootstrap/nav";
+@import "assets/libs/bootstrap/navbar";
+@import "assets/libs/bootstrap/card";
+// @import "assets/libs/bootstrap/breadcrumb";
+@import "assets/libs/bootstrap/pagination";
+@import "assets/libs/bootstrap/badge";
+@import "assets/libs/bootstrap/jumbotron";
+@import "assets/libs/bootstrap/alert";
+@import "assets/libs/bootstrap/progress";
+@import "assets/libs/bootstrap/media";
+@import "assets/libs/bootstrap/list-group";
+@import "assets/libs/bootstrap/close";
+@import "assets/libs/bootstrap/modal";
+@import "assets/libs/bootstrap/tooltip";
+@import "assets/libs/bootstrap/popover";
+@import "assets/libs/bootstrap/carousel";
+@import "assets/libs/bootstrap/utilities";
+@import "assets/libs/bootstrap/print";
+
+
+// slick slider
+@import "assets/libs/slick/slick";
+
+// slick slider
+@import "assets/libs/lightbox";
+
+// стили с уже сверстанного сайта
+@import "base/style";
+@import "base/style11";
+
+
+// GRID
+// @import "base/grid/grid";
+
+
+
+
+// PAGE TEMPLATE
+// @import "block/standard/template/page-header";
+// @import "block/standard/template/page-footer";
+
+// @import "block/standard/template/sticky-header/sticky-header";
+// @import "block/standard/template/sidebar/sidebar";
+
+
+//UNIVERSAL
+@import "block/standard/universal/accordeon/accordeon";
+@import "block/standard/universal/breadcrumbs/breadcrumbs";
+@import "block/standard/universal/btn/btn";
+@import "block/standard/universal/checkbox/checkbox";
+@import "block/standard/universal/select/nice-select-prefixed";
+// @import "block/standard/universal/cta/cta";
+// @import "block/standard/universal/dropdown/dropdown";
+// @import "block/standard/universal/feature/feature";
+// @import "block/standard/universal/hero/hero";
+// @import "block/standard/universal/icon/icon";
+// @import "block/standard/universal/legal/legal";
+// @import "block/standard/universal/logo/logo";
+// @import "block/standard/universal/made-by/made-by";
+// @import "block/standard/universal/modal/modal";
+// @import "block/standard/universal/modal/overlay";
+// @import "block/standard/universal/nav/nav";
+// @import "block/standard/universal/menu/menu";
+// @import "block/standard/universal/pagination/pagination";
+// @import "block/standard/universal/photo/photo";
+// @import "block/standard/universal/search/search";
+// @import "block/standard/universal/tabs/tabs";
+// @import "block/standard/universal/tooltip/tooltip";
+// @import "block/standard/universal/to-top/to-top";
+// @import "block/standard/universal/user-options/user-options";
+
+
+// E-SHOP BLOCKS
+@import "block/standard/e-shop/basket/basket";
+
+// @import "block/standard/e-shop/brand-holder/brand-holder";
+// @import "block/standard/e-shop/brand-select/brand-select";
+// @import "block/standard/e-shop/brands-slider/brands-slider";
+// @import "block/standard/e-shop/catalog-link/catalog-link";
+// @import "block/standard/e-shop/catalog-list/catalog-list";
+// @import "block/standard/e-shop/catalog-nav/catalog-nav";
+// @import "block/standard/e-shop/catalog-slider/catalog-slider";
+// @import "block/standard/e-shop/category/category";
+// @import "block/standard/e-shop/filter-category/filter-category";
+// @import "block/standard/e-shop/filters/filters";
+@import "block/standard/e-shop/product-thumb/product-thumb";
+// @import "block/standard/e-shop/products/products";
+@import "block/standard/e-shop/product-detail/product-detail";
+// @import "block/standard/e-shop/product-detail-heading/product-detail-heading";
+// @import "block/standard/e-shop/product-list/product-list";
+// @import "block/standard/e-shop/product-list-controls/product-list-controls";
+// @import "block/standard/e-shop/product-logo/product-logo";
+// @import "block/standard/e-shop/quantity-counter/quantity-counter";
+// @import "block/standard/e-shop/sort/sort";
+
+// MISC
+// @import "block/standard/misc/grtyoutube-popup";
+// @import "block/standard/misc/helper";
+
+// libs
+@import "assets/libs/animate";
+
+
+
+// SWIPER
+// @import "block/swiper/swiper";
+// @import "block/swiper/slide-category";
+// @import "block/swiper/slide-content";
+
+
+
+
+
+
+

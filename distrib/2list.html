@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/> -->
+    <!-- <link href="css/style.css" type="text/css" rel="stylesheet"> -->
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+
+
+    <link href="/css/main.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript" src="/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="header-contacts d-inline-block w-100">
+                        <span class="d-inline-block w-50">Бесплатная линия: 8 800 125 81 25<br/> (пн-вс: 9:00 - 21:00) | onfo@altayzakroma.ru</span>
+                    </div>
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="/images/logo.png" />
+                        </a>
+                    </div>
+                    <div class="navbar navbar-expand-lg">
+                        <div class="navbar-nav top-menu align-self-start align-self-md-end flex-wrap flex-column flex-md-row">
+                            <a class="nav-item nav-link" href="#">О нас</a>
+                            <a class="nav-item nav-link" href="#">Акции</a>
+                            <a class="nav-item nav-link active" href="#">Сотрудничество</a>
+                            <a class="nav-item nav-link" href="#">Полезная информация</a>
+                        </div>
+                    </div>
+                    <div class="user-actions">
+                        <div class="user-actions-links w-100 float-left">
+                            <a href="#" class="user-actions-link float-left">Вход</a>
+                            <a href="#" class="user-actions-link float-right">Регистрация</a>
+                        </div>
+                        <div class="small-basket w-100 d-flex">
+                            <div class="small-basket-img">
+                                <img src="/images/basket.png"/>
+                            </div>
+                            <div class="small-basket-content text-right align-self-end">
+                                <span>Корзина</span><br/>
+                                <span>Товаров: 8 шт</span>
+                            </div>
+                        </div>
+                        <div class="top-search">
+                            <form class="form-search">
+                                <div class="input-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="top-search-basic-addon">
+                                            <img src="/images/search.png"/>
+                                        </span>
+                                        <input type="text" class="form-control border-0" placeholder="Поиск по сайту" aria-describedby="top-search-basic-addon">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-menu-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="catalog-menu-inner w-100">
+                        <div class="navbar navbar-nav navbar-collapse navbar-expand-lg navbar-dark flex-md-row flex-sm-column catalog-menu">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="navbar-collapse collapse align-items-stretch w-100" id="top-menu">
+                                <div class="menu-item dropdown active">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Хлебная продукция</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item active">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown1.png" />
+                                            </div>
+                                            <span>Хлеб из пшеничной муки</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown2.png" />
+                                            </div>
+                                            <span>Хлеб из ржаной муки</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown3.png" />
+                                            </div>
+                                            <span>Хлеба здоровья</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown4.png" />
+                                            </div>
+                                            <span>Хлебная продукция</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Кондитерские изделия</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Полуфабрикаты</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Копчено-вареные изделия</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Мука</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Крупы</a>
+                                </div>
+                                <div class="menu-item dropdown">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Масло растительное</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown1.png" />
+                                            </div>
+                                            <span>Хлеб из пшеничной муки</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown2.png" />
+                                            </div>
+                                            <span>Хлеб из ржаной муки</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown3.png" />
+                                            </div>
+                                            <span>Хлеба здоровья</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown4.png" />
+                                            </div>
+                                            <span>Хлебная продукция</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cut-banner"></div> <!--малый баннер ддля внутренних страниц-->
+    </header>
+
+
+
+<section class="section text-center testy-price shadow">
+        <div class="testy-price-section-background"></div>
+        <div class="testy-price-section-inner">
+            
+            <!-- заголовок для внутренней страницы -->
+            <div class="section-header d-inline-block">
+                <h1>Хлеб из пшеничной муки</h1>
+            </div>
+            <!-- заголовок для внутренней страницы конец -->
+
+            <div class="container">                
+                <!-- хлебные крошки -->
+                <div class="breadcrumbs">
+                    <a href="#" class="breadcrumbs__item">Каталог</a>
+                    <a href="#" class="breadcrumbs__item">Хлебная продукция</a>
+                    <a href="#" class="breadcrumbs__item">Хлеб из пшеничной муки</a>
+                </div>
+                <!-- хлебные крошки конец-->
+
+
+
+<!-- ===================================================================================================
+     начало контента внутренней страницы -->
+
+
+
+                <div class="row hits-items">                    
+
+                    <!-- одна карточка из списка каталога -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <a class="product-thumb">
+                            <div class="product-thumb__img">
+                                <div class="product-thumb__img_inner" style="background-image: url(/images/products/prod-1.jpg);"></div>
+                            </div>
+                            <div class="product-thumb__info">
+                                <p class="product-thumb__name">Латайские закрома хлеб, нарезка, 0,40 кг, пакет</p>
+                                <span class="product-thumb__price">225,55 руб.</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- одна карточка из списка каталога конец -->
+
+                     <!-- одна карточка из списка каталога -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <a class="product-thumb">
+                            <div class="product-thumb__img">
+                                <div class="product-thumb__img_inner" style="background-image: url(/images/products/prod-1.jpg);"></div>
+                            </div>
+                            <div class="product-thumb__info">
+                                <p class="product-thumb__name">Латайские закрома хлеб, нарезка, 0,40 кг, пакет</p>
+                                <span class="product-thumb__price">225,55 руб.</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- одна карточка из списка каталога конец -->
+
+                    <!-- одна карточка из списка каталога -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <a class="product-thumb">
+                            <div class="product-thumb__img">
+                                <div class="product-thumb__img_inner" style="background-image: url(/images/products/prod-1.jpg);"></div>
+                            </div>
+                            <div class="product-thumb__info">
+                                <p class="product-thumb__name">Латайские закрома хлеб, нарезка, 0,40 кг, пакет</p>
+                                <span class="product-thumb__price">225,55 руб.</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- одна карточка из списка каталога конец -->
+
+                    <!-- одна карточка из списка каталога -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <a class="product-thumb">
+                            <div class="product-thumb__img">
+                                <div class="product-thumb__img_inner" style="background-image: url(/images/products/prod-1.jpg);"></div>
+                            </div>
+                            <div class="product-thumb__info">
+                                <p class="product-thumb__name">Латайские закрома хлеб, нарезка, 0,40 кг, пакет</p>
+                                <span class="product-thumb__price">225,55 руб.</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- одна карточка из списка каталога конец -->
+
+                    <!-- одна карточка из списка каталога -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <a class="product-thumb">
+                            <div class="product-thumb__img">
+                                <div class="product-thumb__img_inner" style="background-image: url(/images/products/prod-1.jpg);"></div>
+                            </div>
+                            <div class="product-thumb__info">
+                                <p class="product-thumb__name">Латайские закрома хлеб, нарезка, 0,40 кг, пакет</p>
+                                <span class="product-thumb__price">225,55 руб.</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- одна карточка из списка каталога конец -->
+
+                    <!-- одна карточка из списка каталога -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <a class="product-thumb">
+                            <div class="product-thumb__img">
+                                <div class="product-thumb__img_inner" style="background-image: url(/images/products/prod-1.jpg);"></div>
+                            </div>
+                            <div class="product-thumb__info">
+                                <p class="product-thumb__name">Латайские закрома хлеб, нарезка, 0,40 кг, пакет</p>
+                                <span class="product-thumb__price">225,55 руб.</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- одна карточка из списка каталога конец -->
+
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+
+
+    <footer class="footer">
+        <section class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-sm w-100">
+                        <img class="img-fluid info-banner" src="/images/logo_footer.png" alt="">
+                    </div>
+                    <div class="logo-info d-flex flex-column">
+                        <img class="img-fluid info-banner" src="/images/logo_footer.png" alt="">
+                        <div class="info-section-address">
+                            <div class="img-fluid float-left">
+                                <img class="img-fluid info-banner" src="/images/icon-addres.png" alt="">
+                            </div>
+                            <div class="address-container float-left">
+                                <span class="info-address">Холдинг “Алтайские закрома” 2017</span>
+                                <span class="info-address">656036, Алтайский край,</span>
+                                <span class="info-address">г. Барнаул, ул. Петра Сухова, 61</span>
+                            </div>
+                        </div>
+                        <div class="info-section-phone d-flex align-items-center">
+                            <div class="img-fluid float-left">
+                                <img class="img-fluid info-banner float-left" src="/images/icon-phone.png" alt="">
+                            </div>
+                            <span class="info-phone">8 800 125 81 25</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-wrap footer-menu-container">
+                        <ul class="nav flex-column footer-menu">
+                          <li class="nav-item">
+                            <a class="nav-link link-title" href="#">О нас</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Предложения<br/>холдинга</a>
+                          </li>
+                        </ul>
+                        <ul class="nav flex-column footer-menu">
+                          <li class="nav-item">
+                            <a class="nav-link link-title" href="#">Новости</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Сертификаты</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Договорной пакет</a>
+                          </li>
+                        </ul>
+                        <ul class="nav flex-column footer-menu">
+                          <li class="nav-item">
+                            <a class="nav-link link-title" href="#">Сотрудничество</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Оплата</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Программы лояльности</a>
+                          </li>
+                        </ul>
+                        <ul class="nav flex-column footer-menu">
+                          <li class="nav-item">
+                            <a class="nav-link link-title" href="#">Полезная информация</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Опросы</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка</a>
+                          </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="#">Часто задаваемые<br/>вопросы</a>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-center social">
+                        <a href="/" class="social-item vk"></a>
+                        <a href="/" class="social-item facebook"></a>
+                        <a href="/" class="social-item ok"></a>
+                        <a href="/" class="social-item twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-floor">
+            <div class="d-flex container justify-content-between">
+                <div class="d-flex floor-copy">© Алтайские закрома</div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

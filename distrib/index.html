@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/main.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="header-contacts d-inline-block w-100">
+                        <span class="d-inline-block w-50">Бесплатная линия: 8 800 125 81 25<br/> (пн-вс: 9:00 - 21:00) | onfo@altayzakroma.ru</span>
+                    </div>
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="/images/logo.png" />
+                        </a>
+                    </div>
+                    <div class="navbar navbar-expand-lg">
+                        <div class="navbar-nav top-menu align-self-start align-self-md-end flex-wrap flex-column flex-md-row">
+                            <a class="nav-item nav-link" href="#">О нас</a>
+                            <a class="nav-item nav-link" href="#">Акции</a>
+                            <a class="nav-item nav-link active" href="#">Сотрудничество</a>
+                            <a class="nav-item nav-link" href="#">Полезная информация</a>
+                        </div>
+                    </div>
+                    <div class="user-actions">
+                        <div class="user-actions-links w-100 float-left">
+                            <a href="#" class="user-actions-link float-left">Вход</a>
+                            <a href="#" class="user-actions-link float-right">Регистрация</a>
+                        </div>
+                        <div class="small-basket w-100 d-flex">
+                            <div class="small-basket-img">
+                                <img src="/images/basket.png"/>
+                            </div>
+                            <div class="small-basket-content text-right align-self-end">
+                                <span>Корзина</span><br/>
+                                <span>Товаров: 8 шт</span>
+                            </div>
+                        </div>
+                        <div class="top-search">
+                            <form class="form-search">
+                                <div class="input-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="top-search-basic-addon">
+                                            <img src="/images/search.png"/>
+                                        </span>
+                                        <input type="text" class="form-control border-0" placeholder="Поиск по сайту" aria-describedby="top-search-basic-addon">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-menu-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="catalog-menu-inner w-100">
+                        <div class="navbar navbar-nav navbar-collapse navbar-expand-lg navbar-dark flex-md-row flex-sm-column catalog-menu">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="navbar-collapse collapse align-items-stretch w-100" id="top-menu">
+                                <div class="menu-item dropdown active">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Хлебная продукция</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item active">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown1.png" />
+                                            </div>
+                                            <span>Хлеб из пшеничной муки</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown2.png" />
+                                            </div>
+                                            <span>Хлеб из ржаной муки</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown3.png" />
+                                            </div>
+                                            <span>Хлеба здоровья</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown4.png" />
+                                            </div>
+                                            <span>Хлебная продукция</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Кондитерские изделия</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Полуфабрикаты</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Копчено-вареные изделия</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Мука</a>
+                                </div>
+                                <div class="menu-item">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Крупы</a>
+                                </div>
+                                <div class="menu-item dropdown">
+                                    <a href="javascript:void(0);" class="nav-link menu-link">Масло растительное</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown1.png" />
+                                            </div>
+                                            <span>Хлеб из пшеничной муки</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown2.png" />
+                                            </div>
+                                            <span>Хлеб из ржаной муки</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown3.png" />
+                                            </div>
+                                            <span>Хлеба здоровья</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center dropdown-menu-item">
+                                            <div class="menu-img">
+                                                <img src="/images/dropdown4.png" />
+                                            </div>
+                                            <span>Хлебная продукция</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-banner">
+            <div class="container">
+                <div class="banner-text float-right">
+                    <span class="banner-text-sm">ЭКОЛОГИЧЕСКИ ЧИСТЫЕ</span>
+                    <span class="banner-text-lg">ПРОДУКТЫ</span>
+                    <span class="banner-text-md">С АЛТАЙСКИХ ПОЛЕЙ</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section text-center advantages-section shadow">
+        <div class="advantages-section-background"></div>
+        <div class="advantages-section-inner">
+            <div class="section-header d-inline-block">ПОЧЕМУ МЫ?</div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="section-item col-lg-4 col-md-6 align-self-center">
+                        <span>Более <span class="section-text-lg">50</span> <span class="section-text-md">тысяч</span><br/> покупателей</span>
+                    </div>
+                    <div class="section-item col-lg-4 col-md-6 align-self-center">
+                        <span>Более <span class="section-text-lg">20</span> лет<br/>успешной работы</span>
+                    </div>
+                    <div class="section-item col-lg-4 col-md-6 align-self-center">
+                        <span>Более <span class="section-text-lg">300</span><br/>наименований<br/>продукции</span>
+                    </div>
+                    <div class="section-item col-lg-4 col-md-6 align-self-center">
+                        <div class="img">
+                            <img src="/images/contracts.png"/>
+                        </div>
+                        <span>Контракты с крупными<br/>торговыми сетями</span>
+                    </div>
+                    <div class="section-item col-lg-4 col-md-6 align-self-center">
+                        <div class="img">
+                            <img src="/images/natural.png"/>
+                        </div>
+                        <span>Только натуральная<br/>продукция</span>
+                    </div>
+                    <div class="section-item col-lg-4 col-md-6 align-self-center">
+                        <div class="img">
+                            <img src="/images/quality.png"/>
+                        </div>
+                        <span>Надежный<br/>контроль качества</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section text-center catalog-section">
+        <div class="catalog-section-background"></div>
+        <div class="catalog-section-inner">
+            <div class="section-header d-inline-block">КАТАЛОГ ПРОДУКЦИИ</div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="section-item col-md-3 col-4">
+                        <div class="img">
+                            <img src="/images/catalog_1.png"/>
+                        </div>
+                        <span>Хлебная<br/>продукция</span>
+                    </div>
+                    <div class="section-item col-md-3 col-4">
+                        <div class="img">
+                            <img src="/images/catalog_2.png"/>
+                        </div>
+                        <span>Кондитерские<br/>изделия</span>
+                    </div>
+                    <div class="section-item col-md-3 col-4">
+                        <div class="img">
+                            <img src="/images/catalog_3.png"/>
+                        </div>
+                        <span>Полуфабрикаты</span>
+                    </div>
+                    <div class="section-item col-md-3 col-4">
+                        <div class="img">
+                            <img src="/images/catalog_4.png"/>
+                        </div>
+                        <span>Копчено-вареные<br/>изделия</span>
+                    </div>
+                    <div class="section-item col-md-3 col-4">
+                        <div class="img">
+                            <img src="/images/catalog_5.png"/>
+                        </div>
+                        <span>Мука</span>
+                    </div>
+                    <div class="section-item col-md-3 col-4">
+                        <div class="img">
+                            <img src="/images/catalog_6.png"/>
+                        </div>
+                        <span>Крупа</span>
+                    </div>
+                    <div class="section-item col-md-3 col-4">
+                        <div class="img">
+                            <img src="/images/catalog_7.png"/>
+                        </div>
+                        <span>Растительное<br/>масло</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section text-center special-section shadow">
+        <div class="special-section-background"></div>
+        <div class="special-section-inner">
+            <div class="section-header d-inline-block">СПЕЦИАЛЬНЫЕ КОЛЛЕКЦИИ</div>
+            <div class="container">
+                <div class="special-slider row">
+                    <div>
+                        <div class="special-item">
+                            <div class="img text-center">
+                                <img src="/images/special_item.png"/>
+                            </div>
+                            <div class="special-item-title">Джемы<br/>ТМ "Алтай"</div>
+                            <div class="special-item-description">Большая вкусовая линейка натуральный продукт</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="special-item">
+                            <div class="img text-center">
+                                <img src="/images/special_item.png"/>
+                            </div>
+                            <div class="special-item-title">Джемы<br/>ТМ "Алтай"</div>
+                            <div class="special-item-description">Большая вкусовая линейка натуральный продукт</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="special-item">
+                            <div class="img text-center">
+                                <img src="/images/special_item.png"/>
+                            </div>
+                            <div class="special-item-title">Джемы<br/>ТМ "Алтай"</div>
+                            <div class="special-item-description">Большая вкусовая линейка натуральный продукт</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="special-item">
+                            <div class="img text-center">
+                                <img src="/images/special_item.png"/>
+                            </div>
+                            <div class="special-item-title">Джемы<br/>ТМ "Алтай"</div>
+                            <div class="special-item-description">Большая вкусовая линейка натуральный продукт</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="special-item">
+                            <div class="img text-center">
+                                <img src="/images/special_item.png"/>
+                            </div>
+                            <div class="special-item-title">Джемы<br/>ТМ "Алтай"</div>
+                            <div class="special-item-description">Большая вкусовая линейка натуральный продукт</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="special-item">
+                            <div class="img text-center">
+                                <img src="/images/special_item.png"/>
+                            </div>
+                            <div class="special-item-title">Джемы<br/>ТМ "Алтай"</div>
+                            <div class="special-item-description">Большая вкусовая линейка натуральный продукт</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="special-item">
+                            <div class="img text-center">
+                                <img src="/images/special_item.png"/>
+                            </div>
+                            <div class="special-item-title">Джемы<br/>ТМ "Алтай"</div>
+                            <div class="special-item-description">Большая вкусовая линейка натуральный продукт</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="special-item">
+                            <div class="img text-center">
+                                <img src="/images/special_item.png"/>
+                            </div>
+                            <div class="special-item-title">Джемы<br/>ТМ "Алтай"</div>
+                            <div class="special-item-description">Большая вкусовая линейка натуральный продукт</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section text-center testy-price shadow">
+        <div class="testy-price-section-background"></div>
+        <div class="testy-price-section-inner">
+            <div class="section-header d-inline-block">Вкусная цена</div>
+            <div class="container">
+                <div class="row hits-items justify-content-center">
+                    <div class="d-flex flex-column product-card">
+                        <picture><img class="img-fluid item-img" src="/images/testy_price.png"></picture>
+                        <div class="block-info">
+                            <h3 class="item-title">Джемы <br/>ТМ "Алтай"</h3>
+                             <p class="text-testy-price">Большая вкусовая линейка натуральный продукт натуральный продукт</p>
+                             <div class="bottom-product-slide d-flex align-items-center flex-row flex-wrap">
+                                <span class="item-weight">500 г</span>
+                                <span class="price-product">399 р.</span>
+                             </div>
+                             <a class="btn btn-buy-product" href="/" tabindex="0">
+                                <span>В корзину</span><img src="/images/basket-icon.png" class="btn-buy-product-icon">
+                            </a>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-column product-card">
+                        <picture><img class="img-fluid item-img" src="/images/testy_price.png"></picture>
+                        <div class="block-info">
+                            <h3 class="item-title">Джемы <br/>ТМ "Алтай"</h3>
+                             <p class="text-testy-price">Большая вкусовая линейка натуральный продукт натуральный продукт</p>
+                             <div class="bottom-product-slide d-flex align-items-center flex-row flex-wrap">
+                                <span class="item-weight">500 г</span>
+                                <span class="price-product">399 р.</span>
+                             </div>
+                             <a class="btn btn-buy-product" href="/" tabindex="0">
+                                <span>В корзину</span><img src="/images/basket-icon.png" class="btn-buy-product-icon">
+                            </a>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-column product-card">
+                        <picture><img class="img-fluid item-img" src="/images/testy_price.png"></picture>
+                        <div class="block-info">
+                            <h3 class="item-title">Джемы <br/>ТМ "Алтай"</h3>
+                             <p class="text-testy-price">Большая вкусовая линейка натуральный продукт натуральный продукт</p>
+                             <div class="bottom-product-slide d-flex align-items-center flex-row flex-wrap">
+                                <span class="item-weight">500 г</span>
+                                <span class="price-product">399 р.</span>
+                             </div>
+                             <a class="btn btn-buy-product" href="/" tabindex="0">
+                                <span>В корзину</span><img src="/images/basket-icon.png" class="btn-buy-product-icon">
+                            </a>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-column product-card">
+                        <picture><img class="img-fluid item-img" src="/images/testy_price.png"></picture>
+                        <div class="block-info">
+                            <h3 class="item-title">Джемы <br/>ТМ "Алтай"</h3>
+                             <p class="text-testy-price">Большая вкусовая линейка натуральный продукт натуральный продукт</p>
+                             <div class="bottom-product-slide d-flex align-items-center flex-row flex-wrap">
+                                <span class="item-weight">500 г</span>
+                                <span class="price-product">399 р.</span>
+                             </div>
+                             <a class="btn btn-buy-product" href="/" tabindex="0">
+                                <span>В корзину</span><img src="/images/basket-icon.png" class="btn-buy-product-icon">
+                            </a>
+                         </div>
+                    </div>
+                    <div class="d-flex flex-column product-card">
+                        <picture><img class="img-fluid item-img" src="/images/testy_price.png"></picture>
+                        <div class="block-info">
+                            <h3 class="item-title">Джемы <br/>ТМ "Алтай"</h3>
+                             <p class="text-testy-price">Большая вкусовая линейка натуральный продукт натуральный продукт</p>
+                             <div class="bottom-product-slide d-flex align-items-center flex-row flex-wrap">
+                                <span class="item-weight">500 г</span>
+                                <span class="price-product">399 р.</span>
+                             </div>
+                             <a class="btn btn-buy-product" href="/" tabindex="0">
+                                <span>В корзину</span><img src="/images/basket-icon.png" class="btn-buy-product-icon">
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section text-center news shadow">
+        <div class="section-news-background"></div>
+        <div class="section-news-inner">
+            <div class="section-header d-inline-block">Новости компании</div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="d-flex news-item">
+                          <h3 class="news-item-title">Корпоративная школа управления</h3>
+                          <picture><img class="img-fluid item-img" src="/images/news.png"></picture>
+                          <p class="text-news">Вспомните ситуации, когда Вам ставили задачи, и Вы их не выполнили, или же Вы ставили задачи, и Ваши подчиненные их не выполнили.</p>
+                    </div>
+                    <div class="d-flex news-item">
+                      <h3 class="news-item-title">Корпоративная школа управления</h3>
+                      <picture><img class="img-fluid item-img" src="/images/news.png"></picture>
+                      <p class="text-news">Вспомните ситуации, когда Вам ставили задачи, и Вы их не выполнили, или же Вы ставили задачи, и Ваши подчиненные их не выполнили.</p>
+                    </div>
+                    <div class="d-flex news-item">
+                      <h3 class="news-item-title">Корпоративная школа управления</h3>
+                      <picture><img class="img-fluid item-img" src="/images/news.png"></picture>
+                      <p class="text-news">Вспомните ситуации, когда Вам ставили задачи, и Вы их не выполнили, или же Вы ставили задачи, и Ваши подчиненные их не выполнили.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-sm w-100">
+                        <img class="img-fluid info-banner" src="/images/logo_footer.png" alt="">
+                    </div>
+                    <div class="logo-info d-flex flex-column">
+                        <img class="img-fluid info-banner" src="/images/logo_footer.png" alt="">
+                        <div class="info-section-address">
+                            <div class="img-fluid float-left">
+                                <img class="img-fluid info-banner" src="/images/icon-addres.png" alt="">
+                            </div>
+                            <div class="address-container float-left">
+                                <span class="info-address">Холдинг “Алтайские закрома” 2017</span>
+                                <span class="info-address">656036, Алтайский край,</span>
+                                <span class="info-address">г. Барнаул, ул. Петра Сухова, 61</span>
+                            </div>
+                        </div>
+                        <div class="info-section-phone d-flex align-items-center">
+                            <div class="img-fluid float-left">
+                                <img class="img-fluid info-banner float-left" src="/images/icon-phone.png" alt="">
+                            </div>
+                            <span class="info-phone">8 800 125 81 25</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-wrap footer-menu-container">
+                        <ul class="nav flex-column footer-menu">
+                          <li class="nav-item">
+                            <a class="nav-link link-title" href="#">О нас</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Предложения<br/>холдинга</a>
+                          </li>
+                        </ul>
+                        <ul class="nav flex-column footer-menu">
+                          <li class="nav-item">
+                            <a class="nav-link link-title" href="#">Новости</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Сертификаты</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Договорной пакет</a>
+                          </li>
+                        </ul>
+                        <ul class="nav flex-column footer-menu">
+                          <li class="nav-item">
+                            <a class="nav-link link-title" href="#">Сотрудничество</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Оплата</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Программы лояльности</a>
+                          </li>
+                        </ul>
+                        <ul class="nav flex-column footer-menu">
+                          <li class="nav-item">
+                            <a class="nav-link link-title" href="#">Полезная информация</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Опросы</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка</a>
+                          </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="#">Часто задаваемые<br/>вопросы</a>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-center social">
+                        <a href="/" class="social-item vk"></a>
+                        <a href="/" class="social-item facebook"></a>
+                        <a href="/" class="social-item ok"></a>
+                        <a href="/" class="social-item twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-floor">
+            <div class="d-flex container justify-content-between">
+                <div class="d-flex floor-copy">© Алтайские закрома</div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
