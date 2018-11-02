@@ -1,15 +1,17 @@
 .product-thumb {
 	display: block;
 	width: 100%;
+	height: 93%;
 	margin: 0 0 30px 0;
 	border-radius: 7px;
 	overflow: hidden;
 	box-shadow: 0 3px 20px 1px rgba(0,0,0,.3);
 	transition: $tr;
+	text-decoration: none;
 	// position: relative;
 	// font-size: 1.6rem;
 
-	// @include flex-col(nowrap, flex-start, flex-start);
+	@include flex-col(nowrap, flex-start, flex-start);
 
 	// &::after {
 	// 	@include pseudo;
@@ -24,6 +26,7 @@
 	&:hover {
 		box-shadow: 0 0 2px 1px rgba(0,0,0,.1);
 		transform: translatey(6px);
+		text-decoration: none;
 		.product-thumb__info {
 			// background-color: transparent;
 		}
@@ -35,8 +38,10 @@
 
 .product-thumb__img {
 	position: relative;
-	display: block;
+
+	flex: 0 0 290px;
 	height: 290px;
+
 	width: 100%;
 	overflow: hidden;
 }
@@ -51,6 +56,8 @@
 	}
 
 .product-thumb__info {
+	flex-grow: 1;
+	width: 100%;
 	@include flex-row(nowrap, space-between, flex-start);
 	padding: 23px 27px;
 	background-color: $color_second;

@@ -8,6 +8,52 @@ body{
     font-family: 'Days', serif;
     margin: 0;
 }
+/*отступы*/
+
+.margin-bot-10 {margin-bottom: 10px !important;}
+.margin-bot-20 {margin-bottom: 20px !important;}
+.margin-bot-30 {margin-bottom: 30px !important;}
+.margin-bot-40 {margin-bottom: 40px !important;}
+.margin-bot-50 {margin-bottom: 50px !important;}
+.margin-bot-100 {margin-bottom: 100px !important;}
+
+.margin-top-10 {margin-top: 10px !important;}
+.margin-top-20 {margin-top: 20px !important;}
+.margin-top-30 {margin-top: 30px !important;}
+.margin-top-40 {margin-top: 40px !important;}
+.margin-top-50 {margin-top: 50px !important;}
+.margin-top-100 {margin-top: 100px !important;}
+
+.padding-10 {padding: 10px !important;}
+.padding-20 {padding: 20px !important;}
+.padding-30 {padding: 30px !important;}
+.padding-40 {padding: 40px !important;}
+.padding-50 {padding: 50px !important;}
+    @media screen and (max-width: 768px) {
+        .margin-top-100 {margin-top: 80px !important;}
+
+        .padding-20 {padding: 15px !important;}
+        .padding-30 {padding: 25px !important;}
+        .padding-40 {padding: 30px !important;}
+        .padding-50 {padding: 35px !important;}
+    }
+    @media screen and (max-width: 568px) {
+        .margin-top-100 {margin-top: 65px !important;}
+
+        .padding-10 {padding: 5px !important;}
+        .padding-20 {padding: 10px !important;}
+        .padding-30 {padding: 20px !important;}
+        .padding-40 {padding: 25px !important;}
+        .padding-50 {padding: 30px !important;}
+    }
+    @media screen and (max-width: 413px) {
+        .margin-top-100 {margin-top: 40px !important;}
+
+        .padding-20 {padding: 8px !important;}
+        .padding-30 {padding: 16px !important;}
+        .padding-40 {padding: 22px !important;}
+        .padding-50 {padding: 25px !important;}
+    }
 .container {
     max-width: 1364px;
 }
@@ -1121,3 +1167,34 @@ body{
         justify-content: center!important;
     }
 }
+
+.cabinet-link {
+    width: 100%;
+    height: 187px;
+    @include flex-col(wrap, center, center);
+    background-color: $color_main;
+    box-shadow: 0 0 18px 1px rgba(0,0,0,.6);
+    border-radius: 10px;
+    transition: $tr;
+
+    &:hover {
+        // background-color: #fdc206;
+        transform: translateY(4px);
+        box-shadow: none;
+
+        p{ color: #fdc206; }
+    }
+
+    p {
+        color: #fff;
+        margin: 0;
+        @include font-kit(24px, 23px, 22px, 20px, 19px);
+        transition: $tr;
+    }
+
+    img {width: 47px;margin: 0 0 15px 0;transition: $tr;}
+}
+
+.cabinet-link_new-order {}
+.cabinet-link_fine-orders {}
+.cabinet-link_history {}

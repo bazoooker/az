@@ -366,6 +366,14 @@ body{
 .section.catalog-section {
     padding-bottom: 110px;
     z-index: 3;
+
+    .section-item {
+        span {
+            a {
+                color: #45260e;
+            }
+        }
+    }
 }
 .section.catalog-section .catalog-section-background {
     background: url(../images/catalog_bg.jpg) no-repeat center;
@@ -409,7 +417,7 @@ body{
     z-index: 3;
 }
 .section.special-section .special-section-background {
-    background: url(../images/special_bg.jpg) no-repeat center;
+    background: url(../images/special_bg_small.png) no-repeat center;
     background-size: cover;
     position: absolute;
     top: 0;
