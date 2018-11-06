@@ -567,8 +567,9 @@ body{
     z-index: 1;
 }
 .section.testy-price .testy-price-section-background {
-    background: url(../images/testy_price_bg.jpg) no-repeat center;
-    background-size: cover;
+    background: url(../images/testy_price_bg.jpg) repeat-y center;
+    // background-size: cover;
+    background-attachment: fixed;
     position: absolute;
     top: 0;
     right: 0;
@@ -1175,10 +1176,12 @@ body{
     background-color: $color_main;
     box-shadow: 0 0 18px 1px rgba(0,0,0,.6);
     border-radius: 10px;
+    text-decoration: none;
     transition: $tr;
 
     &:hover {
         // background-color: #fdc206;
+        text-decoration: none;
         transform: translateY(4px);
         box-shadow: none;
 

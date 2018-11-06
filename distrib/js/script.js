@@ -41,15 +41,6 @@ $(document).ready(function() {
         nextArrow: '<button type="button" class="slick-next"><span class="icon-nav-slider-special"></span></button>',
         prevArrow: '<button type="button" class="slick-prev"><span class="icon-nav-slider-special"></span></button>',
         responsive: [
-            // {
-            //     breakpoint: 1210,
-            //     settings: {
-            //         slidesToShow: 3,
-            //         slidesToScroll: 3,
-            //         infinite: true,
-            //         dots: false
-            //     }
-            // },
             {
                 breakpoint: 910,
                 settings: {
@@ -72,6 +63,23 @@ $(document).ready(function() {
                 }
             }
         ]
+    });
+
+
+
+    // ACCORDEON
+
+    $('.js-accordeon-controls').click(function() {
+
+        // подсвечиваем открытый аккордеон
+        if ( $(this).parent().hasClass('opened') ) {
+            $(this).parent().removeClass('opened');
+            $(this).parent().children('.accordeon-item__content').slideUp(300);
+        }
+        else {
+            $(this).parent().addClass('opened');
+            $(this).parent().children('.accordeon-item__content').slideDown(300);
+        }
     });
 
 });

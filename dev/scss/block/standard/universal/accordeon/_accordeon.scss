@@ -1,236 +1,132 @@
-.accordeon {
-	// margin-top: 3rem;
-	@media screen and (min-width: 769px) {
-		display: none;
-	}
-
-}
-
-
 .accordeon-item {
 	/*поведение*/
-  	flex: 1 1 30%;
+	margin: 0 0 10px 0;
 
   	/*стили*/
- 	// background-color: $color_main;
  	list-style: none;
- 	// padding: 2.5rem 4rem 2.5rem 4rem;
- 	margin-bottom: .1rem;
- 	cursor: pointer;
  	text-align: center;
 
- 	font-size: 1.4rem;
  	transition: 200ms;
  	text-align: left;
 
- 	& > p {
-      	font-size: 2.4rem;
-      	color: #fff;
-      	font-weight: 300;
-      	text-transform: uppercase;
 
-      	margin-top: 0;
-      }
-      & > span {
-      	font-size: 1.4rem;
-      	color: #fff;
-      }
-
-      &:last-child {
-			margin-bottom: 0;
-		}
-		
 
 	&.opened {
 		& > .accordeon-item__label {
-			// background-color: darken($color_main-light, 8%);
-			margin-bottom: 1px;
-
+			background-color: #008706;
 			&:after {
-				transform: translateY(-50%) rotate(225deg);
+				transform: translateY(-40%) rotate(225deg);
 			}
-
 		}
 	}
 }
 .accordeon-item__label {
 	position: relative;
-	// padding: .4rem;
-	background-color: $color_main-light;
-	padding: 2.5rem 3.5rem 2.5rem 2rem;
-	font-size: 2rem;
-	// text-transform: uppercase;
-	// color: #fff;
-	color: $color_main;
+	background-color: $color_main;
+	// padding: 12px 22px 45px 12px;
+	padding: 12px 22px;
+	color: $color_second;
+	@include font-kit(22px,21px,20px,18px,17px);
+	border-radius: 11px;
 
 	cursor: pointer;
-
-	&.big {
-		background-color: $color_main;
-		color: #fff;
-
-		&:after {		
-			border-bottom: 1px solid #fff;
-			border-right: 1px solid #fff;
-		}
-	}
-
-	& > span {
-		color: #fff;
-	}
-
-	& > p {
-		font-size: 2.4rem;
-		color: #fff;
-		font-weight: 300;
-		margin-top: 0;
-	}
 
 	&:after {
 		@include pseudo;
 
-		right: 2rem;
+		right: 20px;
 		top: 50%;
 		transform: translateY(-50%) rotate(45deg);
 
-		border-bottom: 1px solid $color_main;
-		border-right: 1px solid $color_main;
+		border-bottom: 3px solid $color_second;
+		border-right: 3px solid $color_second;
 
-		width: 1.5rem;
-		height: 1.5rem;
+		width: 15px;
+		height: 15px;
 
-		transition: 300ms;
-
-		// background-color: #fff;
-		// border-radius: 50%;
+		transition: 250ms;
+		transition-delay: 300ms;
 	}
 
 
 }
 .accordeon-item__content {
-		
-	// by default accrodeons are open on desktops	
-	display: block;
+
+	padding: 10px 0 0 45px;
+	display: none;
+
+	.accordeon-item {
+	 	box-shadow: 0 0 25px 1px rgba(0,0,0,.2);
+	 	background-color: $color_second;
+	 	border-radius: 11px;
 	
-	// by default accrodeons are closed on mobile
-	@media screen and (max-width: 768px) {
-		display: none;
-	}
-	
-
-	.accordeon-item__content {
-		padding: 1.5rem 0;
-	}
-
-	.accordeon-item__label {
-		position: relative;
-		padding: 2.5rem 2rem 2.5rem 2rem;
-		background-color: $color_main-light !important;
-		// text-transform: uppercase;
-		color: $color-main;
-
-		&:after {
-			@include pseudo;
-
-			right: 2rem;
-			top: 50%;
-			transform: translateY(-50%) rotate(45deg);
-
-			border-bottom: 1px solid $color_main;
-			border-right: 1px solid $color_main;
-
-			width: 1.5rem;
-			height: 1.5rem;
-		}
-	}
+		.accordeon-item__label {
+			font-size: 18px;
+			position: relative;
+			background-color: $color_second;
+			color: $color-main;
 
 
+			&:after {
+				@include pseudo;
 
-	.search-params {
-		@include flex-row(wrap, flex-start, stretch);
-	}
-	
-	.search-params__region {
-		flex-direction: row-reverse;
-		justify-content: center;
-		margin: 2rem 0 0 0;
-		flex: 1 1 100%;
+				right: 2rem;
+				top: 50%;
+				transform: translateY(-50%) rotate(45deg);
 
-		@media screen and (max-width: 500px) {
-			justify-content: center;
-		}
+				border-bottom: 3px solid $color_main;
+				border-right: 3px solid $color_main;
 
-		.nice-select {
-			margin-right: 0;
-			flex: 1 1 50%;
+				width: 15px;
+				height: 15px;
 
-			@media screen and (max-width: 500px) {
-				flex: 1 1 100%;
-			}
-		}
-		.region {
-			margin: 0;
-
-			@media screen and (max-width: 500px) {
-				flex: 1 1 100%;
+				transition: 250ms;
+				transition-delay: 300ms;
 			}
 		}
 
-		.showtype {
-			margin: 0 0 2rem 0;
-			flex: 1 1 100%;
+		.accordeon-item__content {
+			padding: 20px;
 		}
-	}
-	.search-params__checkboxes {
-		@include flex-row(wrap, flex-start, stretch);
-		// display: block;
-		margin-bottom: 1rem;
-		flex: 1 1 100%;
 
-		.fancy-checkbox {
-			// display: block;
-			flex: 1 1 40%;
-			height: 4rem;
-			margin: 1.5rem 0 0 0;
+		&.opened {
+			& > .accordeon-item__label {
+				background-color: #f0d8bf;
 
-			@media screen and (max-width: 500px) {
-				flex: 1 1 100%;
-			}
-		}
-	}
+				&:after {
+					transform: translateY(-40%) rotate(225deg);
+				}
 
-	
-
-
-}
-
-
-@media screen and (max-width: 500px) {
-		
-
-	.accordeon-item__content {
-		
-		.search-params__region {
-
-			.nice-select,
-			.region {		
-				flex: 1 1 100%;
-				margin-right: 0;					
-			}
-
-			.nice-select {
-				.list {
-					width: 100%;
+				.product-list__price,
+				.product-list__quant,
+				.product-list__total {
+					height: 100%;
+					opacity: 1;
+					transform: translateY(0);
 				}
 			}
-
-			
 		}
-		.search-params__checkboxes {
+	}
+}
 
-			.fancy-checkbox {			
-					flex: 1 1 100%;
-			}
+@media screen and (max-width: 768px) {
+	.accordeon-item__content {
+		padding: 10px 0 0 20px;
+	}	
+}
+
+@media screen and (max-width: 568px) {
+	.accordeon-item__label {
+		padding: 12px 30px 15px 12px;
+	}
+	.accordeon-item__content {
+		padding: 20px 0px;
+
+		.accordeon-item {
+			.accordeon-item__content {padding: 0 0;}
 		}
+	}	
+	.order-contents {
+		li {padding: 35px 15px;}
 	}
 }
