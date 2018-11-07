@@ -18,6 +18,15 @@
 				transform: translateY(-40%) rotate(225deg);
 			}
 		}
+
+		.order-history__price,
+        .order-history__quant,
+        .order-history__total {
+
+            // изменятеся
+            transform: translateY(0);
+            opacity: .43;
+        }
 	}
 }
 .accordeon-item__label {
@@ -52,7 +61,8 @@
 }
 .accordeon-item__content {
 
-	padding: 10px 0 0 45px;
+	// padding: 10px 0 0 45px;
+	padding: 20px 0;
 	display: none;
 
 	.accordeon-item {
@@ -111,7 +121,7 @@
 
 @media screen and (max-width: 768px) {
 	.accordeon-item__content {
-		padding: 10px 0 0 20px;
+		padding: 20px 10px;
 	}	
 }
 

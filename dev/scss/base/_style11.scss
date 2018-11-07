@@ -1318,6 +1318,379 @@ body{
 // ==========================================================================
 
 
+// заголовок заказа в истории
+.order-history {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+    li {
+        @include flex-row(nowrap, space-between, center);
+        padding: 15px 25px;
+        margin: 0;
+        position: relative;
+        transition: 100ms;
+
+        &:nth-child(odd) {
+            background-color: #fcecdc;
+        }
+
+        span {
+            position: relative;
+        }
+    }
+
+    .accordeon-item__label {
+        position: relative;
+
+        @include flex-row(nowrap, space-between, center);
+        padding: 12px 70px 12px 66px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            
+            top: 50%;
+            transform: translateY(-52%);
+
+            height: 30px;
+            width: 30px;
+
+            background-image: url(/images/icons/i-star.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            transition: 200ms;
+
+            // изменяется
+            left: 10px;
+            opacity: 0;
+        }
+    }
+
+    .accordeon-item__content {
+        background-color: $color_second;
+    }
+
+}
+.order-history__name {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0;
+
+    color:#fff;
+    @include font-kit(22px,21px,19px,17px,16px);
+    line-height: 1.5;
+}
+.order-history__price {
+    flex: 0 0 16.333%;
+    max-width: 16.333%;
+
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    opacity: .7;
+    text-align: center;
+}
+.order-history__quant {
+    flex: 0 0 16.333%;
+    max-width: 16.333%;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: .7;
+    text-align: center;
+}
+.order-history__total {
+    flex: 0 0 16.333%;
+    max-width: 16.333%;
+
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    text-align: right;
+    opacity: .7;
+}
+.order-history__actions {
+    text-align: center;
+    button {
+        margin: 5px 5px;
+    }
+}
+.order-history__price,
+.order-history__quant,
+.order-history__total {
+    transition: 250ms;
+    transition-delay: 200ms;
+
+    // изменяется
+    transform: translateY(-30px);
+    opacity: 0;
+}
+
+.order-history_fav {
+
+    .accordeon-item__label {
+        position: relative;
+
+        &::before {
+            left: 17px;
+            opacity: 1;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .order-history__name  {
+        flex: 1 1 40%; 
+        max-width: 40%; 
+    }
+    .order-history__price,
+    .order-history__quant, 
+    .order-history__total {
+        flex: 1 1 20%;
+        max-width: 20%;
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .order-history {
+        li {
+            @include flex-row(wrap, space-between, flex-start);
+            padding: 20px 20px;
+        }
+    }
+
+    .order-history__name  {
+        flex: 1 1 100%; 
+        max-width: 100%; 
+    }
+
+    .order-history__price,
+    .order-history__quant, 
+    .order-history__total {
+        display: none;  
+    }
+}
+
+
+// ==========================================================
+
+
+
+
+
+
+
+
+
+
+// ============================================================
+
+// одна позиция оплаченного заказа
+.order-history-contents {
+    margin: 0;
+    padding: 0;
+    li {
+        @include flex-row(nowrap, space-between, center);
+        padding: 15px 66px 15px 66px;
+        margin: 0;
+        position: relative;
+        transition: 100ms;
+
+        &:nth-child(odd) {
+            background-color: #fcecdc;
+        }
+
+        span {
+            position: relative;
+        }
+    }
+}
+.order-history-contents__name {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0;
+
+    color: $color_main;
+    @include font-kit(16px,15px,14px,16px,17px);
+}
+.order-history-contents__price {
+    flex: 0 0 16.333%;
+    max-width: 16.333%;
+
+    @include font-kit(16px,15px,14px,13px,13px);
+    color: $color_contr;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    text-align: center;
+}
+.order-history-contents__quant {
+    flex: 0 0 16.333%;
+    max-width: 16.333%;
+
+    i {
+        @include flex-row(nowrap,center,center);
+        margin: 0 auto;
+        height: 33px;
+        width: 140px;
+        border-radius: 6px;
+        background-color: #fff2e5;
+        border: 1px solid #f0d8bf;
+        font-style: normal;
+    }
+}
+.order-history-contents__total {
+    flex: 0 0 16.333%;
+    max-width: 16.333%;
+
+    @include font-kit(16px,15px,14px,13px,13px);
+    color: $color_contr;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    text-align: right;
+}
+.order-history-contents__total-all {
+    @include flex-row(nowrap,space-between,center);
+    margin: 10px 0 25px 0 !important;
+    background-color: #f7e4d0;
+
+    span {
+        @include font-kit(22px,21px,20px,19px,18px);
+        &:first-child{color: $color_main;}
+        &:last-child{color: $color_contr;}
+        font-weight: 600;
+    }
+}
+
+.order-history-contents__units {font-style: normal;}
+
+
+@media screen and (max-width: 1200px) {
+    .order-history-contents__name  {
+        flex: 1 1 40%; 
+        max-width: 40%; 
+        margin: 0 0 10px 0;
+    }
+    .order-history-contents__price,
+    .order-history-contents__quant, 
+    .order-history-contents__total {
+        flex: 1 1 20%;
+        max-width: 20%;
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .order-history-contents {
+        li {
+            @include flex-row(wrap, space-between, flex-start);
+            padding: 20px 20px;
+        }
+    }
+
+    .order-history-contents__name  {
+        flex: 1 1 100%; 
+        max-width: 100%; 
+        margin: 0 0 10px 0;
+    }
+    .order-history-contents__price,
+    .order-history-contents__total {
+        flex: 1 1 24%;
+        max-width: 24%;
+        position: relative;
+        padding: 24px 0 0 0;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 18px;
+            font-size: 11px;
+            color: #ae937e;
+            font-weight: 300;
+            opacity: .55;
+        }
+    }
+
+    .order-history-contents__quant {
+        flex: 1 1 52%;
+        max-width: 52%;
+        position: relative;
+        padding: 18px 0 0 0;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 18px;
+            font-size: 11px;
+            color: #ae937e;
+            font-weight: 300;
+            opacity: .55;
+        }
+    }
+
+    .order-history-contents__price {
+        &::before {content: 'Цена';}
+    }
+    .order-history-contents__quant {
+        &::before {content: 'Кол-во';}
+    }
+    .order-history-contents__total {
+        &::before {content: 'Сумма';}
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 568px) {
+    .order-history-contents__units {display:none;}
+}
+
+@media screen and (max-width: 413px) {
+    .order-history-contents__price,
+    .order-history-contents__quant, 
+    .order-history-contents__total {
+        flex: 1 1 100%;
+        min-width: 100%;
+        margin-bottom: 5px;
+        padding: 10px 0 10px 80px;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 16px;
+            font-size: 11px;
+            color: #ae937e;
+            font-weight: 300;
+            opacity: .55;
+            line-height: 1.6;
+        }
+    }
+}
+
+
+
+// ==========================================================================
+
+
 .order-summary {
     padding: 20px 20px 20px 20px;
     background-color: $color_second;
@@ -1355,4 +1728,34 @@ body{
     }
 
     .order-summary__total-left {opacity: .85;}
+}
+
+// =============================
+
+.order-fav-message {
+    position: fixed;
+    bottom: 10px;
+    width: 280px;
+    height: 80px;
+
+    padding: 20px;
+    border-radius: 11px;
+    box-shadow: 0 0 25px 1px rgba(0,0,0,.55);
+    background-color: $color_second;
+
+    transition: 250ms;
+    z-index: 8;
+    
+    // изменяется
+    right: -300px;
+    opacity: 0;
+
+    h6 {
+        color: $color_main;
+    }
+}
+
+.order-fav-message_active {
+    transform: translateX(-310px);
+    opacity: 1;
 }

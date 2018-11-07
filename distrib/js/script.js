@@ -82,4 +82,42 @@ $(document).ready(function() {
         }
     });
 
+
+
+
+    // показ сообщения о добавлении заказа в избранное
+    function showFavAddMessage() {
+        if ($('#order-removed').hasClass('order-fav-message_active')) {
+            $('#order-removed').removeClass('order-fav-message_active');
+        }
+        $('#order-added').addClass('order-fav-message_active');
+        setTimeout(function() {$('#order-added').removeClass('order-fav-message_active')}, 1500);
+    }
+
+    function showFavRemoveMessage() {
+        if ($('#order-added').hasClass('order-fav-message_active')) {
+            $('#order-added').removeClass('order-fav-message_active');
+        }
+        $('#order-removed').addClass('order-fav-message_active');
+        setTimeout(function() {$('#order-removed').removeClass('order-fav-message_active')}, 1500);                
+    }
+
+
+    $('.js-fav-add').click(function() {
+
+        // добавляем
+        if ( $(this).hasClass('add') ) {
+            $(this).removeClass('add').addClass('btn_star-delete');
+            $(this).parent().parent().parent().addClass('order-history_fav');
+            $(this).html('Удалить из избранных заказов');
+            showFavAddMessage();
+
+        // удаляем
+        } else {
+            $(this).addClass('add').removeClass('btn_star-delete');
+            $(this).parent().parent().parent().removeClass('order-history_fav');
+            $(this).html('Добавить в избранные заказы');
+            showFavRemoveMessage();
+        }
+    });
 });
