@@ -229,7 +229,7 @@
 
 
                                     <li><!--одна строка заказа начало-->
-                                        <span class="order-contents__name">Товар</span>
+                                        <span id="tovar-1" class="order-contents__name js-show-product-zoom">Товар</span>
                                         <span class="order-contents__price">
                                             22,50 <i class="order-contents__units">руб.</i> 
                                             <!--единицы измерения завернуты в отдельный тег, чтобы скрывать их на некоторых разрешениях -->
@@ -294,7 +294,7 @@
                             <div class="accordeon-item__content">
                                 <ul class="order-contents">
                                     <li>
-                                        <span class="order-contents__name">Хлеб для птичек</span>
+                                        <span class="order-contents__name js-open-product-zoom">Хлеб для птичек</span>
                                         <span class="order-contents__price">
                                             22,50 <i class="order-contents__units">руб.</i>
                                         </span>
@@ -316,7 +316,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="order-contents__name">Вкусный хлеб для птичек</span>
+                                        <span class="order-contents__name js-open-product-zoom">Вкусный хлеб для птичек</span>
                                         <span class="order-contents__price">
                                             32,50 <i class="order-contents__units">руб.</i>
                                         </span>
@@ -367,7 +367,7 @@
                             <div class="accordeon-item__content">
                                 <ul class="order-contents">
                                     <li>
-                                        <span class="order-contents__name">Маска</span>
+                                        <span class="order-contents__name js-open-product-zoom">Маска</span>
                                         <span class="order-contents__price">
                                             22,50 <i class="order-contents__units">руб.</i>
                                         </span>
@@ -389,7 +389,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="order-contents__name">Былина</span>
+                                        <span class="order-contents__name js-open-product-zoom">Былина</span>
                                         <span class="order-contents__price">
                                             22,50 <i class="order-contents__units">руб.</i>
                                         </span>
@@ -533,5 +533,83 @@
             </div>
         </section>
     </footer>
+
+    <div class="product-zoom testy-price section">
+
+        <span class="product-zoom__close js-open-product-zoom"></span>
+
+        <section class="text-center">
+            <div class="section-header d-inline-block">
+                <h2 class="text-center">Хлеб из пшеничной муки</h2>
+            </div>
+        </section>
+
+
+        <div class="row product-detail">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="product-detail__photos">
+
+                    <div class="product-detail__photo-big">
+                        <div class="product-detail__photo-big_inner" style="background-image: url(/images/products/prod-1.jpg);">
+                            <a href="/images/products/prod-1.jpg" data-lightbox="image-1"></a>
+                            <!-- урл на фоне и урл в ссылке должны совпадать -->
+                        </div>
+                    </div>
+
+                    <div class="product-detail__thumbs-list">
+                        <div class="product-detail__small-thumb" style="background-image: url(/images/products/prod-1.jpg);">
+                            <a href="/images/products/prod-1.jpg" data-lightbox="image-1"></a>
+                        </div>
+                        <div class="product-detail__small-thumb" style="background-image: url(/images/products/prod-1.jpg);">
+                            <a href="/images/products/prod-1.jpg" data-lightbox="image-1"></a>
+                        </div>
+                        <div class="product-detail__small-thumb" style="background-image: url(/images/products/prod-1.jpg);">
+                            <a href="/images/products/prod-1.jpg" data-lightbox="image-1"></a>
+                        </div>
+                        <div class="product-detail__small-thumb" style="background-image: url(/images/products/prod-1.jpg);">
+                            <a href="/images/products/prod-1.jpg" data-lightbox="image-1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <p><b>
+                    Хлеб «Алтайские закрома» изготовлен из муки высшего сорта, имеет ароматный мякиш, хрустящую корочку, посыпанную зажаристыми зернами кунжута. Обладает превосходным вкусом, является отличной альтернативой основному хлебу, удобен для ежедневного потребления. 
+                </b></p>
+                <div class="product-detail__price">24,55 руб.</div>
+
+                <table class="product-detail__table">
+                    <tr>
+                        <td>ГОСТ</td>
+                        <td>СТО 94063892-001-2008</td>
+                    </tr>
+                    <tr>
+                        <td>Состав продукта</td>
+                        <td>Мука пшеничная хлебопекарная высшего сорта, вода питьевая, семя кунжута, сыворотка молочная сухая, маргарин (растительные масла и жиры, вода, молочная сыворотка, соль, сахар, эмульгаторы (Е471, Е475), ароматизатор «Сливочное масло», краситель натуральный (аннато)), сахар, соль, дрожжи лебопекарные.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Вес, г</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <td>Срок хранения</td>
+                        <td>3 суток</td>
+                    </tr>
+                    <tr>
+                        <td>Пищевая ценность</td>
+                        <td>белки — 9,0 г, жиры — 4,5 г, углеводы усвояемые — 47,0 г; энергетическая ценность 260 ккал/1100 кДж</td>
+                    </tr>
+                    <tr>
+                        <td>Тип упаковки</td>
+                        <td>пакет</td>
+                    </tr>
+                </table>
+
+            </div>                    
+        </div><!--product-detail end-->
+    </div>
+
+    <div class="overlay js-open-product-zoom"></div>
 </body>
 </html>

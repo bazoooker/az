@@ -264,6 +264,12 @@ body{
         padding: 0;
         @include font-kit(30px, 28px, 26px, 24px, 22px);
     }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        @include font-kit(27px, 25px, 24px, 22px, 21px);
+    }
 }
 .section .section-header:before {
     content: ' ';
@@ -288,6 +294,13 @@ body{
     border-style: solid;
     border-color: #291606 transparent;
     z-index: -1;
+}
+
+@media screen and (max-width: 568px) {
+    .section .section-header:before,
+    .section .section-header:after {
+        display: none;
+    }
 }
 .section.advantages-section {
     padding-bottom: 110px;
@@ -1154,7 +1167,7 @@ body{
     padding: 0;
     li {
         @include flex-row(nowrap, space-between, center);
-        padding: 15px 25px;
+        padding: 15px 66px;
         margin: 0;
         position: relative;
         transition: 100ms;
@@ -1174,8 +1187,14 @@ body{
     max-width: 50%;
     padding: 0;
 
+    cursor: pointer;
+
     color: $color_main;
     @include font-kit(16px,15px,14px,16px,17px);
+
+    &:hover {
+        color: $color_contr;
+    }
 
 }
 .order-contents__price  {
@@ -1758,4 +1777,77 @@ body{
 .order-fav-message_active {
     transform: translateX(-310px);
     opacity: 1;
+}
+
+
+// =====================================
+
+.product-zoom {
+    position: fixed;
+    z-index: 12;
+    width: 80%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 20px;
+    background: #fff;
+    border-radius: 11px;
+    box-shadow: 0 0 35px 1px rgba(0,0,0,.12);
+    
+    // изменяется
+    display: none;
+}
+
+.product-zoom__close {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: 250ms;
+
+    // изменяется
+    opacity: .55;
+
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: red;
+        width: 36px;
+        height: 6px;
+        left: 0;
+        top: 16px;
+        border-radius: 4px;
+        transition: 250ms;
+    }
+    &::before   { transform: rotate(45deg); }
+    &::after    { transform: rotate(-45deg); }
+
+
+    &:hover {
+        opacity: 1;
+        &::before   { transform: rotate(-45deg); }
+        &::after    { transform: rotate(45deg); }
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .product-zoom {width: 90%;}
+}
+@media screen and (max-width: 1023px) {
+    .product-zoom {
+        top: 2.5%;
+        transform: translateX(-50%) translateY(0);
+        height: 95%;
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 992px) {
+    .product-zoom {width: 95%;}
 }

@@ -66,6 +66,7 @@
 	display: none;
 
 	.accordeon-item {
+		margin: 0px 0 15px 45px;
 	 	box-shadow: 0 0 25px 1px rgba(0,0,0,.2);
 	 	background-color: $color_second;
 	 	border-radius: 11px;
@@ -80,7 +81,7 @@
 			&:after {
 				@include pseudo;
 
-				right: 2rem;
+				right: 20px;
 				top: 50%;
 				transform: translateY(-50%) rotate(45deg);
 
@@ -96,7 +97,7 @@
 		}
 
 		.accordeon-item__content {
-			padding: 20px;
+			padding: 0;
 		}
 
 		&.opened {
@@ -126,8 +127,18 @@
 }
 
 @media screen and (max-width: 568px) {
+	.accordeon-item__content {
+		padding: 10px 0;
+		.accordeon-item {
+			margin: 0px 0 15px 25px;
+		}
+	}
 	.accordeon-item__label {
 		padding: 12px 30px 15px 12px;
+			&:after {
+				width: 12px;
+				height: 12px;
+			}
 	}
 	.accordeon-item__content {
 		padding: 20px 0px;
@@ -138,5 +149,23 @@
 	}	
 	.order-contents {
 		li {padding: 35px 15px;}
+	}
+
+	.accordeon-item__content {
+
+		.accordeon-item {
+			margin: 0px 0 15px 25px;
+			.accordeon-item__label {
+				font-size: 16px;
+
+				&:after {
+					border-bottom: 2px solid $color_main;
+					border-right: 2px solid $color_main;
+
+					width: 10px;
+					height: 10px;
+				}
+			}
+		}
 	}
 }

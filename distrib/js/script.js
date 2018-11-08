@@ -120,4 +120,22 @@ $(document).ready(function() {
             showFavRemoveMessage();
         }
     });
+
+
+
+    // product zoom
+
+    // js-open-product-zoom
+    function showProductZoom() {
+        let isOpened = $('.product-zoom').hasClass('product-zoom_opened');
+        if( !isOpened ) {
+            $('.product-zoom, .overlay').fadeIn(200).addClass('product-zoom_opened');
+            console.log('open');
+        } else {
+            $('.product-zoom, .overlay').fadeOut(200).removeClass('product-zoom_opened');
+            console.log('close');
+        }
+    }
+
+    $('.js-open-product-zoom').click(showProductZoom);
 });

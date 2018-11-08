@@ -1,6 +1,7 @@
 .product-list {
 	@include flex-row(nowrap, space-between, center);
 	overflow: hidden;
+	padding: 12px 66px;
 }
 
 .product-list__name {
@@ -67,5 +68,11 @@
 	.product-list__quant,
 	.product-list__total {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.product-list {
+		padding: 10px 20px;
 	}
 }

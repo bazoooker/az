@@ -6,9 +6,10 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 9;
+	z-index: 11;
 	// background-color: rgba(255,255,255,.5);
-	background-color: rgba(0,0,0,.9);
+	background-color: $color_main;
+	opacity: .95;
 
 	display: none;
 }
